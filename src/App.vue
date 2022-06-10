@@ -1,81 +1,67 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import NameCard from './components/NameCard.vue'
+import IntroStatement from './components/IntroStatement.vue'
+import BlogList from './components/BlogList.vue'
+import FooterCard from './components/Footer.vue'
+
+const techBlogItems = ["Blog 1", "Blog 2", "Blog 3"]
+
+const personalBlogItems = ["Blog 1", "Blog 2", "Blog 3"]
+
+const reBlogItems = ["Blog 1", "Blog 2", "Blog 3"]
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <NameCard />
   </header>
 
   <main>
-    <TheWelcome />
+
+    <IntroStatement />
+
+    <div class="blog-section">
+      <div class="blog">
+        <BlogList blogTitle="Tech Blog" :blogItems="techBlogItems"/>
+      </div>
+      <div class="blog">
+        <BlogList blogTitle="Personal Blog" :blogItems="personalBlogItems"/>
+      </div>
+      <div class="blog">
+        <BlogList blogTitle="RE Blog" :blogItems="reBlogItems"/>
+      </div>
+    </div>
+
+    <footer>
+      <FooterCard />
+    </footer>
+
   </main>
+
 </template>
 
 <style>
-@import './assets/base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  @import './assets/base.css';
 
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
+  .blog-section {
     display: flex;
-    place-items: center;
+    width: 50vw;
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  .blog-section > div {
+    flex: 1;
   }
 
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  footer {
+    text-align: center;
+    justify-content: center;
+    padding: 0.5vw;
+    background-color: #45a1ff;
+    color: #fff;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
 </style>
