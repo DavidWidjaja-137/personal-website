@@ -2,11 +2,11 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/test")
 def hello_world():
     return "<p>Hello, World!</p>"
 
-@app.route("/main")
+@app.route("/")
 def main_site():
 
     return render_template('index.html')

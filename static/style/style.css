@@ -1,5 +1,7 @@
 html, body {
     height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -23,8 +25,8 @@ main {
     background-color: white;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
     flex: 1 0 auto;
 }
 
@@ -38,9 +40,19 @@ footer {
     justify-content: center;
 }
 
-p {
+h1 {
+    margin: 0.5em;
+    font-size: x-large;
+}
+
+h2 {
     margin: 0.5em;
     font-size: larger;
+}
+
+p {
+    margin: 1em;
+    font-size: large;
 }
 
 .namecard {
@@ -69,7 +81,7 @@ p {
     margin-bottom: 3vw;
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 100%;
 }
 
 .blogs {

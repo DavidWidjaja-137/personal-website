@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <meta name="author" content="David Pratama Widjaja" />
     <meta name="description" content="The personal website of David Pratama Widjaja, 
-                Engineer-in-Training(EIT) currently
-                working in Canada as a Software Developer and a Renewable Energy 
+                Engineer-in-Training(EIT) from Jakarta, Indonesia. David is currently
+                working in Vancouver, Canada as a Software Developer and a Renewable Energy 
                 Analyst. Graduated from UBC in 2022 with a BASc in Engineering Physics.
-                Enjoys music and the great outdoors." />
+                Enjoys piano, violin, philosophy, and the great outdoors. Passionate
+                about ecological and humanitarian causes." />
     <meta name="viewport" content="width=device-width" />
 
     <meta property="og:title" content="David Pratama Widjaja's personal website" />
@@ -17,12 +18,7 @@
     <meta property="og:url" content="todo.url" />
 
     <title>David Widjaja</title>
-    <!--
-    <link rel="icon" href="../static/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../static/style/index.css" />
-    <script src="../static/scripts/main.js"></script>
-    -->
-
+    <script src="{{ url_for('static', filename='scripts/main.js')}}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
 
@@ -31,7 +27,7 @@
 <body>
     <header>
         <div class="namecard">
-            <p>David Pratama Widjaja</p>
+            <h1>David Pratama Widjaja</h1>
             <p>widjaja (dot) david (at) ymail (dot) com</p>
             <div class="namecard-iconbar">
                 <a href="https://www.instagram.com/dafid.pw/">
@@ -49,76 +45,74 @@
     <main>
         <div class="description">
             <p>
-                Test Paragraph
+                Hi, welcome to my website! 
             </p>
             <p>
-                Test Paragraph
+                I'm David. I'm a Engineer-in-Training currently based in Vancouver, Canada. My passion 
+                and focus is into the intersection between renewable energy engineering and software 
+                engineering. I am also very interested in energy, social, and ecological policy and how 
+                net-zero emissions can be achieved before it is too late for everyone. A wide focus, yes, 
+                but wicked problems require multidisciplinary solutions.
             </p>
             <p>
-                Test Paragraph
+                I was born and raised in Jakarta, Indonesia(second largest metro area in the world!). 
+                I went to Canada in 2017 to pursue higher education, and in 2022 I graduated from the 
+                University of British Columbia, with a BASc in Engineering Physics. My studies revolved 
+                around embedded systems, mechatronics, software design, mathematics, and physics. I am 
+                currently working as a Renewable Energy Analyst/Software Developer in Vancouver.
             </p>
             <p>
-                Test Paragraph
+                On the side, I enjoy playing the violin(still bad at it), the piano(quite rusty), going 
+                down Wikipedia rabbitholes(very good at it!), quibbling over philosophy with friends(take 
+                a drink every time <i>The Brothers Karamazov</i> comes up), going to gym, and hiking.
             </p>
             <p>
-                Test Paragraph
+                Here you will find my technical blogs, which will be a compilation of readings and side 
+                projects that I would like to share. My personal blogs will be a bunch of readings, essays, 
+                and book reviews. My study notes will be uploaded notes from the things I have studied.
             </p>
             <p>
-                Test Paragraph
+                Email me, lets have a chat sometime! I enjoy listening to new perspectives.
             </p>
-            <img class="block-image" src="assets/img/kodim03.png" alt="test image">
+            <img class="block-image" src="{{ url_for('static', filename='img/main.png')}}" alt="test image">
         </div>
         <div class="blogs">
             <div class="tech-blogs">
-                <h3>Tech Blogs</h3>
+                <h3>Tech Blogs(todo)</h3>
                 <ul>
-                    <li><a href="blogs/template_blog.html">tech blog 1</a></li>
-                    <li>tech blog 2</li>
-                    <li>tech blog 3</li>
-                    <li>tech blog 4</li>
-                    <li>tech blog 5</li>
-                    <li>tech blog 6</li>
-                    <li>tech blog 7</li>
-                    <li>tech blog 8</li>
-                    <li>tech blog 9</li>
-                    <li>tech blog 10</li>
+                    <li>Making this personal website</li>
+                    <li>Bayesian Balancers: A capstone project story</li>
+                    <li>UBC Solar: A long journey</li>
+                    <li>250MW of solar: My internship at Clir Renewables</li>
+                    <li>~500MW of solar: Clir Renewables part 2</li>
+                    <li>How (not to) Engineering Physics</li>
                 </ul>
             </div>
             <div class="personal-blogs">
-                <h3>Personal Blogs</h3>
+                <h3>Personal Blogs(todo)</h3>
                 <ul>
-                    <li>personal blog 1</li>
-                    <li>personal blog 2</li>
-                    <li>personal blog 3</li>
-                    <li>personal blog 4</li>
-                    <li>personal blog 5</li>
-                    <li>personal blog 6</li>
-                    <li>personal blog 7</li>
-                    <li>personal blog 8</li>
-                    <li>personal blog 9</li>
-                    <li>personal blog 10</li>
+                    <li>A review of <i>The Brothers Karamazov</i> by Fyodor Dostoevsky</li>
+                    <li>Fighting a losing battle: A review of <i>Bumi Manusia</i> by Pramoedya Ananta Toer</li>
+                    <li>The Grand Inquisitor: What I think it was all about</li>
+                    <li>A critical view of Indonesian history.</li>
+                    <li><i>Nausicaa of the Valley of the Wind</i> by Hayao Miyazaki</li>
                 </ul>
             </div>
             <div class="study-notes">
-                <h3>Study Blogs</h3>
+                <h3>Study Blogs(todo)</h3>
                 <ul>
-                    <li>study blog 1</li>
-                    <li>study blog 2</li>
-                    <li>study blog 3</li>
-                    <li>study blog 4</li>
-                    <li>study blog 5</li>
-                    <li>study blog 6</li>
-                    <li>study blog 7</li>
-                    <li>study blog 8</li>
-                    <li>study blog 9</li>
-                    <li>study blog 10</li>
+                    <li>Building Microservices by Sam Newman</li>
+                    <li>99 Bottles of OOP</li>
+                    <li>Linear Algebra</li>
+                    <li>Electric Power Principles</li>
+                    <li>Wind Turbines</li>
                 </ul>
             </div>
         </div>
     </main>
     <footer>
         <div class="copyright-notice">
-            <p>David Pratama Widjaja, 2023</p>
+            <h3>David Pratama Widjaja, 2023</h3>
         </div>
     </footer>
 </body>
