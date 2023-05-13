@@ -17,9 +17,14 @@
     <meta property="og:url" content="todo.url" />
 
     <title>David Widjaja</title>
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/style/index.css" />
-    <script src="assets/scripts/main.js"></script>
+    <!--
+    <link rel="icon" href="../static/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/style/index.css" />
+    <script src="../static/scripts/main.js"></script>
+    -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
 
 </head>
 
@@ -30,13 +35,13 @@
             <p>widjaja (dot) david (at) ymail (dot) com</p>
             <div class="namecard-iconbar">
                 <a href="https://www.instagram.com/dafid.pw/">
-                    <img class="iconbar-img", src="assets/img/insta.png">
+                    <img class="iconbar-img", src="{{ url_for('static', filename='img/insta.png')}}">
                 </a>
-                <a href="www.linkedin.com/in/david-pw">
-                    <img class="iconbar-img", src="assets/img/linkedin.png">
+                <a href="https://www.linkedin.com/in/david-pw">
+                    <img class="iconbar-img", src="{{ url_for('static', filename='img/linkedin.png')}}">
                 </a>
-                <a href="assets/resume/resume.pdf">
-                    <img class="iconbar-img", src="assets/img/pdf.png">
+                <a href="{{ url_for('static', filename='cv/cv.pdf')}}">
+                    <img class="iconbar-img", src="{{ url_for('static', filename='img/pdf.png')}}">
                 </a>
             </div>
         </div>
