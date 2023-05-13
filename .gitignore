@@ -1,2 +1,6 @@
 __pycache__
 .DS_store
+infrastructure/heroku-app/app
+.terraform
+terraform.tfstate.backup
+terraform.tfstate
