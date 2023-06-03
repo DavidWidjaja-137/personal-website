@@ -2,6 +2,7 @@ html, body {
     height: 100%;
 
     font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background-color: lightblue;
+    background-color: lightsteelblue;
     padding: 1vw;
     flex: 0 0 auto;
 
@@ -25,13 +26,22 @@ main {
     background-color: white;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
     flex: 1 0 auto;
 }
 
+@media (orientation: landscape) {
+    main {
+        background-color: white;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        flex: 1 0 auto;
+    }
+}
+
 footer {
-    background-color: steelblue;
+    background-color: lightsteelblue;
     padding: 1vw;
     flex-shrink: 0;
 
@@ -47,12 +57,24 @@ h1 {
 
 h2 {
     margin: 0.5em;
-    font-size: larger;
+    font-size: large;
 }
 
 p {
     margin: 1em;
-    font-size: large;
+    font-size: medium;
+}
+
+a:link {
+    color: darkslategray;
+}
+
+a:visited {
+    color: darkslategray;
+}
+
+a:hover {
+    background-color: lightsteelblue;
 }
 
 .namecard {
@@ -87,9 +109,7 @@ p {
 .blogs {
     background-color: white;
     margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .tech-blogs, .personal-blogs, .study-notes {

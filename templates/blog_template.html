@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>David Widjaja</title>
+    <script src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico')}}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="namecard">
+            <h1><a href="{{ url_for('main_site') }}">David Pratama Widjaja</a></h1>
+            <p>widjaja (dot) david (at) ymail (dot) com</p>
+            <div class="namecard-iconbar">
+                <a href="https://www.instagram.com/dafid.pw/">
+                    instagram
+                </a>
+                <a href="https://www.linkedin.com/in/david-pw">
+                    linkedin
+                </a>
+                <a href="{{ url_for('static', filename='cv/cv.pdf')}}">
+                    cv
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="copyright-notice">
+            <h3>David Pratama Widjaja, 2023</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{% extends "blog_template.html" %}
+
+{% block content %}
+    <div>
+        <h1>Making this personal website</h1>
+        <h2>June 2023</h2>
+        <p>
+            It is actually very easy to have a personal website these days. If you 
+            want nothing more than a blog, you can get yourself a managed WordPress site
+            on Squarespace or Wix or something else. If you know a bit of frontend and Git, 
+            and you want something free, use GitHub Pages and an open-source template. For 
+            most use cases, a combination of LinkedIn, Instagram and (maybe) Substack, 
+            Tumblr, or Medium, provides enough of a public outlet that a personal website
+            becomes redundant.
+        </p>
+        <h2>Why have a personal website?</h2>
+        <p>
+            I think that having a personal website fulfils a niche that no social media 
+            account can fill. When you post pictures on Instagram, share an update on 
+            LinkedIn, or publish a blog on Medium, your work goes through an algorithm 
+            that evaluates who will see it, and when it will appear on their feed. When 
+            you write for an audience who are passively being handed content, your writing 
+            will tend towards highlights, summaries, and digests. Only sensational content 
+            can make an impression within an endlessly scrolling sea of information. 
+        </p>
+        <p>
+            A personal website is different. When someone enters on your personal website, 
+            they are looking for you and what you have to say. Yes, maybe most of those people 
+            will end up being background-checkers from HR and bots, but perhaps some of them 
+            will be interested in hearing what you have to say, not just what you are obliged 
+            to write. And so, I think building a personal website is a chance to start a real 
+            connection.
+        </p>
+        <h2>Why build a personal website from scratch?</h2>
+        <p>
+            Mostly for the experience of it. I've studied frontend, but until now I never 
+            really applied it to something I actually wanted to do. I know roughly how HTTPS 
+            works, but what good is that if I never tried to use it? I've gotten some AWS 
+            certifications and played around with Terraform, but I've only done stuff for work 
+            with it. 
+        </p>
+        <h2>What is the current tech stack?</h2>
+        <p>I am changing the tech stack constantly to try new things. But currently: </p>
+        <ul>
+            <li>Terraform for Infrastructure-as-Code</li>
+            <li>Python Flask as the framework + Gunicorn as the webserver</li>
+            <li>Jinja2 as the templating system</li>
+            <li>Heroku as a Platform-as-a-service</li>
+        </ul>
+        <h2>Why no web framework >:| </h2>
+        <p>This is a static website, didn't need one.</p>
+
+    </div>
+{% endblock %}

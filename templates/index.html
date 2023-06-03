@@ -27,17 +27,17 @@
 <body>
     <header>
         <div class="namecard">
-            <h1>David Pratama Widjaja</h1>
+            <h1><a href="{{ url_for('main_site') }}">David Pratama Widjaja</a></h1>
             <p>widjaja (dot) david (at) ymail (dot) com</p>
             <div class="namecard-iconbar">
                 <a href="https://www.instagram.com/dafid.pw/">
-                    <img class="iconbar-img", src="{{ url_for('static', filename='img/insta.png')}}">
+                    instagram
                 </a>
                 <a href="https://www.linkedin.com/in/david-pw">
-                    <img class="iconbar-img", src="{{ url_for('static', filename='img/linkedin.png')}}">
+                    linkedin
                 </a>
                 <a href="{{ url_for('static', filename='cv/cv.pdf')}}">
-                    <img class="iconbar-img", src="{{ url_for('static', filename='img/pdf.png')}}">
+                    cv
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 and book reviews. My study notes will be uploaded notes from the things I have studied.
             </p>
             <p>
-                Email me, lets have a chat sometime! I enjoy listening to new perspectives.
+                Email me, lets have a chat sometime!
             </p>
             <img class="block-image" src="{{ url_for('static', filename='img/main.png')}}" alt="test image">
         </div>
@@ -80,12 +80,12 @@
             <div class="tech-blogs">
                 <h3>Tech Blogs(todo)</h3>
                 <ul>
-                    <li>Making this personal website</li>
+                    <li><a href="{{ url_for('blogs', blogname='blog-1')}}">Making this personal website</a></li>
+                    <li>How (not to) Engineering Physics</li>
+                    <li>250MW of solar power: My internship at Clir Renewables</li>
                     <li>Bayesian Balancers: A capstone project story</li>
                     <li>UBC Solar: A long journey</li>
-                    <li>250MW of solar: My internship at Clir Renewables</li>
                     <li>~500MW of solar: Clir Renewables part 2</li>
-                    <li>How (not to) Engineering Physics</li>
                 </ul>
             </div>
             <div class="personal-blogs">

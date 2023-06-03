@@ -10,3 +10,8 @@ def hello_world():
 def main_site():
 
     return render_template('index.html')
+
+@app.route("/blogs/<blogname>")
+def blogs(blogname):
+
+    return render_template(f'blogs/{blogname}.html')

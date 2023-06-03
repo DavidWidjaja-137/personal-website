@@ -1,3 +1,5 @@
+
+
 terraform {
   required_providers {
     heroku = {
@@ -7,8 +9,13 @@ terraform {
   }
 }
 
-# source api key from environmental variables
+# source Heroku api key from environmental variables
 provider "heroku" {}
+
+# configure the AWS provider
+provider "aws" {
+  region = "us-west-2"
+}
 
 resource "heroku_app" "this" {
     name = "personal-website-david-pw"
