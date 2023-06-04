@@ -4,3 +4,6 @@ infrastructure/heroku-app/app
 .terraform
 terraform.tfstate.backup
 terraform.tfstate
+.zip
+infrastructure/elastic-beanstalk-app/app
+infrastructure/elastic-beanstalk-app/app.zip
