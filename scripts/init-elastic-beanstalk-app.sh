@@ -3,6 +3,7 @@ localpath=$(git rev-parse --show-toplevel)
 new_dir=${localpath}/infrastructure/elastic-beanstalk-app/app
 
 rm -rf ${new_dir}
+rm ${localpath}/infrastructure/elastic-beanstalk-app/app.zip
 mkdir  ${new_dir}
 cp -R static templates main.py Procfile requirements.txt ${new_dir}
 

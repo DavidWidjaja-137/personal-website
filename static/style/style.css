@@ -26,6 +26,8 @@ main {
     background-color: white;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     flex: 1 0 auto;
 }
 
